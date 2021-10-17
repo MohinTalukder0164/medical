@@ -1,0 +1,28 @@
+/* .header-nav {
+    display: flex;
+    justify-content: space-around;
+}  */
+
+.nav-bar{
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar img{
+    margin-top: 10px;
+}
+
+ nav img{ 
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+
+.nav-link a{
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 16px;
+}  

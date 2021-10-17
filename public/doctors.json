@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "name": "Alvin Maxwell",
+        "description": "Creative UI Designer",
+        "img": "https://i.ibb.co/sFwbDxS/d1.webp"
+    },
+    {
+        "id": "2",
+        "name": "Maria Smith",
+        "description": "Agency Manager",
+        "img": "https://i.ibb.co/Wc8WBcH/d3.webp"
+    },
+    {
+        "id": "3",
+        "name": "Angela Doe",
+        "description": "Designer",
+        "img": "https://i.ibb.co/NpqxqR0/d2.webp"
+    }
+]
