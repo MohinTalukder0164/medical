@@ -14,7 +14,7 @@ const Service = () => {
         <>
 
             <div className="service">
-                <h4>━━━━ Our Specialist</h4>
+                <h4>━━━━ OUR DEPARTMENTS</h4>
                 <h2>Our Medical Services</h2>
                 <div className="all-data">
 
