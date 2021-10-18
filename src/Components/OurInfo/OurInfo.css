@@ -4,17 +4,18 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
-    background: rgb(241, 240, 234);
+   
 
 }
 
 .half-image img{
     border-radius: 20px;
-    margin-left: 160px;
+   
 }
 .half-info{
     margin-left: 50px;
     margin-top: 90px;
+   
 }
 .half-info h4{
     color: rgb(39, 39, 190);

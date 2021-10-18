@@ -7,6 +7,7 @@ import Service from './Service/Service';
 import NotFound from './Pages/NotFound/NotFound';
 import Doctors from './Pages/Doctors/Doctors';
 import About from './Pages/About/About';
+import Contact from './Pages/Contact/Contact';
 import Footer from './Shared/Footer/Footer';
 import Login from './Important/Login/Login';
 import Register from './Important/Register/Register';
@@ -43,6 +44,9 @@ function App() {
           </Route>
           <Route path="/register">
             <Register></Register>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
           </Route>
 
           <Route path="*">

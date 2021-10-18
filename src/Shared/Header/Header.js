@@ -8,7 +8,7 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect expand="lg" className="nav-bar">
                 <Container>
-                    <Navbar.Brand href="#home"><img src="https://i.ibb.co/prY3wBw/download-1.webp" alt="" /></Navbar.Brand>
+                    <Link to="/"><img src="https://i.ibb.co/prY3wBw/download-1.webp" alt="" /></Link>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav className="px-7 nav-link">
