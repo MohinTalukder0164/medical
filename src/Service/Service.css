@@ -28,9 +28,15 @@
   .single-data{
       margin-top: 20px;
       margin-left: 20px;
-      box-shadow: 1px 1px 1px 1px rgb(218, 203, 203);
+      box-shadow: 1px 1px 1px 1px rgb(83, 80, 80);     
+      transition: all 0.3s ease-in-out;
+    
       
    
+  }
+
+  .single-data:hover {
+    box-shadow: 0 10px 50px 0 rgba(43, 40, 40, 0.5);
   }
 
   .single-data h3{

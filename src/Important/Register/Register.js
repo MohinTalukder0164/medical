@@ -13,16 +13,20 @@ const Register = () => {
     const handleEmail = e => {
         setEmail(e.target.value)
     }
+
     const handlePassword = e => {
         setPassword(e.target.value)
     }
+
     const handleRegistration = e => {
         e.preventDefault()
         const auth = getAuth();
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 const user = result.user
+                console.log(user);
             })
+
             .catch((error) => {
                 setError(error.code)
                 setError(error.message)

@@ -4,6 +4,8 @@ import './Service.css'
 
 const Service = () => {
 
+
+
     const [data, setData] = useState([]);
     useEffect(() => {
         fetch('service.json')
@@ -25,7 +27,8 @@ const Service = () => {
                             <img src={d.img} alt="" />
                             <h3>{d.name}</h3>
                             <p>{d.description}</p>
-                            <NavLink to="/register" activeClassName="selected">
+
+                            <NavLink to={`/services/${d.id}`} activeClassName="selected">
                                 <button className="details-btn">Service Details</button>
                             </NavLink>
 

@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../UseAuth/UseFirebase';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import initializeAuthentication from '../../Hooks/firebase.init';
+import useAuth from '../../Hooks/useAuth';
+import './Login.css'
 
 initializeAuthentication()
 
 const Login = () => {
 
-    const { signInUsingGoole } = useFirebase()
+    const { signInUsingGoole, logInUsingGithub, user, logOut } = useAuth()
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -27,7 +28,8 @@ const Login = () => {
         const auth = getAuth();
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-                const user = result.user
+                const user = result.user;
+                console.log(user);
             })
             .catch((error) => {
                 setError(error.code)
@@ -66,7 +68,16 @@ const Login = () => {
 
                 <h4>Or Login Using Social Link</h4>
                 <hr />
-                <button onClick={signInUsingGoole} className="btn-primary">Log In using Google</button>
+
+                <div className="font">
+                    <button className="btn-primary font" onClick={signInUsingGoole} ><i class="fab fa-google">    <span className="font mx-3">Log in Using Google</span></i></button>
+                </div>
+                <br />
+
+                <div className="font">
+                    <button className="btn-primary font" onClick={logInUsingGithub} ><i class="fab fa-github">    <span className="font mx-3">Log in Using GitHub</span></i></button>
+                </div>
+
             </div>
         </Container>
     );
