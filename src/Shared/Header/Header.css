@@ -6,6 +6,11 @@
 .nav-bar{
     font-family: 'Poppins', sans-serif;
 }
+.login-btn  a{
+    color: white;
+    padding: 3px;
+    text-align: center;
+}
 
 .nav-bar img{
     margin-top: 10px;

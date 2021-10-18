@@ -17,6 +17,8 @@ const Header = () => {
                             <Link to="/doctors">Doctors</Link>
                             <Link to="/service">Service</Link>
                             <Link to="/contact">Contact</Link>
+                            <Link to="/register">Register</Link>
+                            <button className="btn-danger login-btn "> <Link to="/login">Login</Link></button>
                         </Nav>
                         <Navbar.Text>
                             Signed in as: <a href="#login"></a>

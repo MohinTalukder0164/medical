@@ -8,6 +8,8 @@ import NotFound from './Pages/NotFound/NotFound';
 import Doctors from './Pages/Doctors/Doctors';
 import About from './Pages/About/About';
 import Footer from './Shared/Footer/Footer';
+import Login from './Important/Login/Login';
+import Register from './Important/Register/Register';
 
 function App() {
   return (
@@ -34,6 +36,13 @@ function App() {
 
           <Route path="/about">
             <About></About>
+          </Route>
+
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
           </Route>
 
           <Route path="*">

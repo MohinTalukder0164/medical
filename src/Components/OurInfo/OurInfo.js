@@ -16,9 +16,7 @@ const OurInfo = () => {
                     <button className="btn-danger p-1">Appoinments</button>
                 </div>
                 <div className="half-image">
-
-
-                    <img src="https://i.ibb.co/4gfBpHk/xabout1-png-pagespeed-ic-d-L0-Au07-Uoh.webp" alt="" srcset="" />
+                    <img src="https://i.ibb.co/BZTzjBN/xcontact-form-png-pagespeed-ic-mru3l-Xe-Tq2.webp" alt="" srcset="" />
 
                 </div>
             </div>

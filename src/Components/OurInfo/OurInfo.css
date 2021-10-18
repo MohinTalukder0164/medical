@@ -1,8 +1,16 @@
 .our-info{
+   
     margin-top:80px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
+    background: rgb(241, 240, 234);
+
+}
+
+.half-image img{
+    border-radius: 20px;
+    margin-left: 160px;
 }
 .half-info{
     margin-left: 50px;
@@ -11,4 +19,63 @@
 .half-info h4{
     color: rgb(39, 39, 190);
     font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+    .our-info {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+     
+    }
+
+    .half-info{
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    .half-info h4{
+        text-align: center;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .half-info h1{
+        text-align: center;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .half-image img{
+        border-radius: 20px;
+        
+    }
+  }
+
+  @media only screen and (min-width:689px) and (max-width: 1200px){
+    .our-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       
+      }
+  
+      .half-info{
+          margin-right: 30px;
+          margin-bottom: 20px;
+      }
+  
+      .half-info h4{
+          text-align: center;
+          margin-left: 10px;
+          margin-bottom: 10px;
+      }
+      .half-info h1{
+          text-align: center;
+          margin-left: 10px;
+          margin-bottom: 10px;
+      }
+  
+      .half-image img{
+          border-radius: 20px;
+          
+      }
+    
 }
