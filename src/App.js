@@ -7,6 +7,7 @@ import Service from './Service/Service';
 import NotFound from './Pages/NotFound/NotFound';
 import Doctors from './Pages/Doctors/Doctors';
 import About from './Pages/About/About';
+import Footer from './Shared/Footer/Footer';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
+      <Footer></Footer>
 
     </div>
   );

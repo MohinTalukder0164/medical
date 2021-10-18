@@ -1,0 +1,14 @@
+.our-info{
+    margin-top:80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.half-info{
+    margin-left: 50px;
+    margin-top: 90px;
+}
+.half-info h4{
+    color: rgb(39, 39, 190);
+    font-weight: 500;
+}
