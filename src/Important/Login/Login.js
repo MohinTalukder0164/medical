@@ -14,6 +14,7 @@ const Login = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [users, setUsers] = useState({});
     const [error, setError] = useState('');
 
 
@@ -28,7 +29,7 @@ const Login = () => {
         const auth = getAuth();
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-                const user = result.user;
+                setUsers(result.user);
                 console.log(user);
             })
             .catch((error) => {

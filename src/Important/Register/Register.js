@@ -6,6 +6,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 const Register = () => {
 
     const [email, setEmail] = useState('');
+    const [displayName, setDisplayName] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
@@ -16,6 +17,11 @@ const Register = () => {
 
     const handlePassword = e => {
         setPassword(e.target.value)
+    }
+
+    const handleDisplayName = e => {
+        setDisplayName(e.target.value);
+
     }
 
     const handleRegistration = e => {
@@ -38,12 +44,16 @@ const Register = () => {
 
 
     return (
+
         <div className="font">
             <form onSubmit={handleRegistration} >
                 <div class="container">
                     <h1>Register</h1>
                     <p>Please fill in this form to create an account.</p>
                     <hr />
+
+                    <label htmlFor="text"><b>Your Name</b></label>
+                    <input onBlur={handleDisplayName} type="text" placeholder="Enter Name" name="name" id="name" required />
 
                     <label htmlFor="email"><b>Email</b></label>
                     <input onBlur={handleEmail} type="text" placeholder="Enter Email" name="email" id="email" required />
@@ -56,7 +66,7 @@ const Register = () => {
                         {error}
                         <button type="submit" className="registerbtn">Register</button>
                     </div>
-
+                    {displayName}
                     <div className="container signin">
                         <p>Already have an account? < Link to="/login">Login now</Link>.</p>
                     </div>
