@@ -1,6 +1,6 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import initializeAuthentication from "../Hooks/firebase.init"
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, getRedirectResult, GithubAuthProvider } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, GithubAuthProvider, onAuthStateChanged } from "firebase/auth";
 
 
 initializeAuthentication()
@@ -50,7 +50,18 @@ const useFirebase = () => {
 
             });
 
-    }
+    };
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setUser(user)
+            } else {
+                setUser({})
+            }
+        });
+
+        return () => unsubscribe;
+    }, [])
 
     return {
         signInUsingGoole,
