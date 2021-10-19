@@ -41,3 +41,61 @@ margin-top: 280px;
     padding: 6px;
     border-radius: 20px;
 }
+
+
+@media only screen and (max-width: 689px) {
+    .home-section{
+        font-family: 'Poppins', sans-serif;
+        margin-top: 30px;
+        height: 400px;
+        display: flex;
+        background: url(https://i.ibb.co/b13JLSs/xh1-hero-png-pagespeed-ic-R4-Tm-CES2-Iq.webp);
+    }
+
+    .half-width{
+        margin-top: 80px;
+        
+        }
+        .half-width h4{
+            color: rgb(46, 46, 156);
+        }
+        
+        .half-width h2{
+            margin-left: 39px;
+            font-weight: 700;
+            margin-left: 60px;
+        }
+  }
+
+  @media only screen and (min-width:689px) and (max-width: 1200px){
+    .home-section{
+        font-family: 'Poppins', sans-serif;
+        margin-top: 30px;
+        height: 450px;
+    }
+
+    .half-width{
+        margin-top: 80px;
+        margin-left: 160px;
+        
+        }
+        .half-width h4{
+            color: rgb(46, 46, 156);
+            margin-right: 100px;
+        }
+        .half-width p{
+            
+            margin-right: 100px;
+        }
+        .half-width button{
+            
+            margin-right: 100px;
+        }
+        
+        .half-width h2{
+        
+            font-weight: 700;
+            margin-right: 100px;
+        }
+       
+      }
