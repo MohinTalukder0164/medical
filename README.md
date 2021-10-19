@@ -10,7 +10,7 @@ In the project directory, you can run:
 - Book a service
 - Contact Details
 - Great Footer Section
-- - Realstick Login Page
+- Realstick Login Page
 
 ## Description
 
