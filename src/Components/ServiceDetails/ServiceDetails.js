@@ -25,15 +25,13 @@ const ServiceDetails = () => {
     }, [data])
 
     return (
-        <Container>
-            <div className=" service-container font">
-                <div className="half-section-img">
+        <Container >
+            <div className="all-data font">
+                <div className="single-data" >
                     <img src={service?.img} alt="" />
                     <h2>{service?.name}</h2>
-                </div>
-                <div className=" half-section p-7">
                     <p>{service?.description}</p>
-                    <h4>{service?.Price}</h4>
+                    <button className="btn-primary px-3 my-3">{service?.Price}</button>
                 </div>
             </div>
         </Container>

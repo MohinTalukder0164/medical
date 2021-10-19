@@ -21,19 +21,25 @@ const Header = () => {
                             <Link to="/doctors">Doctors</Link>
                             <Link to="/service">Service</Link>
                             <Link to="/contact">Contact</Link>
-                            <Link to="/register">Register</Link>
-                            <button className="btn-danger login-btn ">
-                                <Link to="/login"><i class="fas fa-sign-in-alt"><span className="font mx-1"> Login</span></i></Link></button>
+                            {
+                                !user.email && <div className="py-1 my-1">
+                                    <button className="btn-primary p-1 mx-3 login-btn"> <Link to="/register"><i class="fas fa-user-plus"><span className="font"> Register</span></i></Link></button>
+                                    <button className="btn-danger login-btn ">
+                                        <Link to="/login"><i class="fas fa-sign-in-alt"><span className="font"> Login</span></i></Link></button>
+                                </div>
+                            }
                             <br />
+
+
+                            {
+                                user.email && <p className="p-1 mx-1" ><i class=" fas fa-user-tie"><span className="font">  {user.displayName}</span></i></p>
+                            }
                             {
                                 user.email &&
-                                <button onClick={logOutGoogle} className="btn-secondary p-1 me-3  mx-3"><i class="fa fa-sign-out" aria-hidden="true"><span className="font mx-1"> Logout</span></i></button>
+                                <button onClick={logOutGoogle} className="btn-warning  "><i class="fa fa-sign-out" aria-hidden="true"><span className="font mx-1"> Logout</span></i></button>
                             }
                         </Nav>
                         <Navbar.Text>
-                            {
-                                user.email && <p>   <b> Welcome:</b> <br /> {user.displayName}</p>
-                            }
                         </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>
