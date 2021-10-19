@@ -16,6 +16,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [users, setUsers] = useState({});
     const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
 
 
     const handleEmail = e => {
@@ -25,13 +26,17 @@ const Login = () => {
         setPassword(e.target.value)
     }
     const handleLogin = e => {
+        setIsLoading(true)
         e.preventDefault()
         const auth = getAuth();
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
                 setUsers(result.user);
-                console.log(user);
+                console.log(user)
             })
+
+            .finally(() => setIsLoading(false))
+
             .catch((error) => {
                 setError(error.code)
                 setError(error.message)
@@ -40,7 +45,7 @@ const Login = () => {
 
     }
 
-    return (
+    return ({ isLoading },
         <Container>
             <div className="font">
                 <form onSubmit={handleLogin}>
