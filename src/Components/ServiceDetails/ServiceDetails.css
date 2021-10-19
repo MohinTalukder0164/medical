@@ -1,0 +1,105 @@
+.service-container {
+    box-shadow: 1px 1px 1px 1px;
+    display: flex;
+}
+
+.half-section{
+    margin-top: 100px;
+margin-left: 340px;
+}
+
+.half-section-img img{
+    width:  400px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 30px;
+}
+.half-section-img h2{
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid gray;
+    margin-left: 20px;
+    background-color: purple;
+    color: white;
+}
+
+.half-section h4{
+    border: 1px solid gray;
+    border-radius: 80px;
+    background-color: pink;
+    width: 240px;
+    margin-left: 129px;
+
+}
+
+
+
+.service-container:hover {
+    box-shadow: 0 10px 50px 0 rgba(43, 40, 40, 0.5);
+  }
+
+  @media only screen and (max-width: 688px) {
+    .service-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .half-section-img img{
+        width: 400px;
+        height: 400px;
+        margin-right: 250px;
+        margin-left: 39;
+    }
+
+    .half-section-img h2{
+        margin-top: 20px;
+        width: 300px;
+        border-radius: 20px;
+        border: 2px solid gray;
+        margin-left: 90px;
+        background-color: purple;
+        color: white;
+    }
+
+    .half-section{
+       margin-left: 10px;
+    }
+    .half-section p{
+        text-align: center;
+        text-overflow:ellipsis;
+        margin-right: 260px;
+    }
+
+
+  }
+
+  @media only screen and (min-width:689px) and (max-width: 1200px){
+    .service-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .half-section-img img{
+          width: 400px;
+          height: 400px;
+          margin-right: 250px;
+      }
+  
+      .half-section-img h2{
+          margin-top: 20px;
+          width: 300px;
+          border-radius: 20px;
+          border: 2px solid gray;
+          margin-left: 120px;
+          background-color: purple;
+          color: white;
+      }
+  
+      .half-section{
+         margin-left: 10px;
+      }
+      .half-section p{
+          text-align: center;
+          text-overflow:ellipsis;
+          margin-right: 180px;
+      }
+}

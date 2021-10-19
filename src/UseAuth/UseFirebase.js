@@ -13,8 +13,8 @@ const useFirebase = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     const signInUsingGoole = () => {
-        isLoading(true);
         const googleProvider = new GoogleAuthProvider();
+
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 setUser(result.user)
