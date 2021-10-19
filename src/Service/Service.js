@@ -26,7 +26,7 @@ const Service = () => {
 
                             <img src={d.img} alt="" />
                             <h3>{d.name}</h3>
-                            <p>{d.description}</p>
+                            <p>{d.description.slice(0, 70)}</p>
 
                             <NavLink to={`/services/${d.id}`} activeClassName="selected">
                                 <button className="details-btn">Service Details</button>
