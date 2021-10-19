@@ -47,7 +47,7 @@ margin-top: 280px;
     .home-section{
         font-family: 'Poppins', sans-serif;
         margin-top: 30px;
-        height: 400px;
+        height: 450px;
         display: flex;
         background: url(https://i.ibb.co/b13JLSs/xh1-hero-png-pagespeed-ic-R4-Tm-CES2-Iq.webp);
     }
@@ -64,6 +64,10 @@ margin-top: 280px;
             margin-left: 39px;
             font-weight: 700;
             margin-left: 60px;
+        }
+        .half-width button{
+            
+            margin-bottom: 20px;
         }
   }
 
