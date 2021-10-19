@@ -21,13 +21,9 @@ const Header = () => {
                             <Link to="/doctors">Doctors</Link>
                             <Link to="/service">Service</Link>
                             <Link to="/contact">Contact</Link>
-
-
                             <Link to="/register">Register</Link>
                             <button className="btn-danger login-btn ">
                                 <Link to="/login"><i class="fas fa-sign-in-alt"><span className="font mx-1"> Login</span></i></Link></button>
-
-
                             <br />
                             {
                                 user.email &&

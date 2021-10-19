@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Register.css'
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 
 const Register = () => {
 
@@ -31,12 +31,29 @@ const Register = () => {
             .then(result => {
                 const user = result.user
                 console.log(user);
+                setUserName()
             })
 
             .catch((error) => {
                 setError(error.code)
                 setError(error.message)
 
+            });
+
+    }
+
+    const setUserName = () => {
+        const auth = getAuth();
+        updateProfile(auth.currentUser, {
+            displayName: displayName
+        })
+
+            .then(() => {
+                // Profile updated!
+                // ...
+            }).catch((error) => {
+                // An error occurred
+                // ...
             });
 
     }
@@ -66,7 +83,6 @@ const Register = () => {
                         {error}
                         <button type="submit" className="registerbtn">Register</button>
                     </div>
-                    {displayName}
                     <div className="container signin">
                         <p>Already have an account? < Link to="/login">Login now</Link>.</p>
                     </div>
