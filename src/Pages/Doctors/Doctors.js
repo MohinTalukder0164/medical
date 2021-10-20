@@ -25,7 +25,7 @@ const Doctors = () => {
                             <img src={d.img} alt="" />
                             <h3>{d.name}</h3>
                             <p>{d.description}</p>
-                            <NavLink to="/" activeClassName="selected">
+                            <NavLink to={`/doctor/${d.id}`} activeClassName="selected">
                                 <button className="details-btn">Books Doctor</button>
                             </NavLink>
 
