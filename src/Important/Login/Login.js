@@ -34,14 +34,14 @@ const Login = () => {
                 setUsers(result.user);
                 console.log(user)
             })
-
-            .finally(() => setIsLoading(false))
-
             .catch((error) => {
                 setError(error.code)
                 setError(error.message)
 
-            });
+            })
+
+            .finally(() => setIsLoading(false))
+
 
     }
 

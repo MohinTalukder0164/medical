@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "medical-operation"
-  }
+    "staging": "simple-firebase-authenti-534df",
+    "default": "simple-firebase-authenti-534df"
+  },
+  "targets": {}
 }
