@@ -28,7 +28,7 @@ const Footer = () => {
             <div className=" font foooter-info">
                 <p>© 2021 Medical Operation LLC. All rights reserved.</p>
 
-                <p >Created by <a href="fb.ahmedparbes">Ahmed Parbes</a></p>
+                <p >Created by <a href="https://www.facebook.com/mohintalukder0164/">Mohin Talukder</a></p>
             </div>
         </div>
 

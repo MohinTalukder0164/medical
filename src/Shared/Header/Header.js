@@ -21,6 +21,7 @@ const Header = () => {
                             <Link to="/doctors">Doctors</Link>
                             <Link to="/service">Service</Link>
                             <Link to="/contact">Contact</Link>
+                            <Link to="/vlogs">Vlogs</Link>
                             {
                                 !user.email && <div className="py-1 my-1">
                                     <button className="btn-primary p-1 mx-3 login-btn"> <Link to="/register"><i class="fas fa-user-plus"><span className="font"> Register</span></i></Link></button>
